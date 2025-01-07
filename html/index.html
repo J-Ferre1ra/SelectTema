@@ -5,9 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Seletor de tema da página</title>
     <link rel="stylesheet" href="/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+    <div id="container-main">
+        <h1 style="font-size: 'Inter';
+            font-weight: 600;">Seletor de tema da página: Modo claro ou escuro</h1>
+        <h3 style="font-size: 'Inter';
+            font-weight: 500;">Escolha seu tema preferido:</h3>
+        <div class="theme-toggle">
+            <input type="checkbox" name="btn-switch" id="theme-switch" class="toggle-input">
+
+            <label for="theme-switch" class="toggle-label">
+                <span class="knob"></span>
+
+            </label>
+        </div>
+
+        <footer style="margin-top: 200px;">
+            <a href="https:linkedin.com/in/ferreiraj0ao" target="_blank" class="imgs-logo">
+                <img src="/img/LinkedIn.svg" alt="logo do linkedin">
+            </a>
+            <a href="https://github.com/J-Ferre1ra" target="_blank" class="imgs-logo">
+                <img src="/img/GitHub.svg" alt="logo do github">
+            </a>
+            <p style="font-size: 'Inter';
+            font-weight: 700;">© Todos os direitos reservados</p>
+        </footer>
+    </div>
+
 
     <script src="/js/script.js"></script>
 </body>

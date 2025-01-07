@@ -1,0 +1,54 @@
+body{
+    background-color: #E9E9E9;
+}
+#container-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+.theme-toggle {
+    display: inline-block;
+    position: relative;
+  }
+  
+  .toggle-input {
+    display: none;
+  }
+  
+.toggle-label {
+    width: 240px; 
+    height: 110px; 
+    background-color: #191818;
+    border-radius: 140px; 
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+ 
+.knob {
+    width: 90px; 
+    height: 90px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 10px; 
+    left: 10px; 
+    transition: transform 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  
+.toggle-input:checked + .toggle-label {
+    background-color: #e4e4e4; 
+}
+
+.toggle-input:checked + .toggle-label .knob {
+    transform: translateX(130px); 
+}
+
+.imgs-logo{
+    margin: 10px;
+}
